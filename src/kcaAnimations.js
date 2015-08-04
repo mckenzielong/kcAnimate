@@ -17,6 +17,11 @@
     "fade-in-up-30" : fadeInUp("30%"),
     "fade-in-up-40" : fadeInUp("40%"),
     "fade-in-up-50" : fadeInUp("50%"),
+    "fade-in-down-10" : fadeInUp("-10%"),
+    "fade-in-down-20" : fadeInUp("-20%"),
+    "fade-in-down-30" : fadeInUp("-30%"),
+    "fade-in-down-40" : fadeInUp("-40%"),
+    "fade-in-down-50" : fadeInUp("-50%"),
     "fade-in" : fadeInUp("0%")
   };
 
@@ -159,19 +164,6 @@
       );
       return tween;
     };
-  }
-
-  function fadeIn(element, duration) {
-    var tween = TweenLite.fromTo(element, duration,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        ease: Power4.easeInOut,
-      }
-    );
-    return tween;
   }
 
   function slideOutTop(element, duration) {
